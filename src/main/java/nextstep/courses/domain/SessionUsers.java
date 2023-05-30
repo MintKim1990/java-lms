@@ -23,7 +23,7 @@ public class SessionUsers {
     }
 
     public boolean isClosed(RecruitmentCount recruitmentCount) {
-        return values.size() >= recruitmentCount.count();
+        return recruitmentCount.isRecruitingClosed(values.size());
     }
 
 
